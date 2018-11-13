@@ -1,0 +1,55 @@
+def setup():
+    size(1000, 480)
+    
+def draw():
+    background(135,206,250)
+
+    draw_sun()
+    draw_tree()
+    draw_tree2()
+    draw_tree3()
+    draw_house()
+    draw_door()
+    
+def draw_sun():
+    fill(255,255,0)
+    ellipse(700,height/4,200,200)
+    
+def draw_tree():
+    noStroke()
+    fill(138,54,15)
+    rect(100, 300, 50, 200)
+    fill(0,100,0)
+    ellipse(100,300,100,100)
+    ellipse(150,300,100,100)
+    ellipse(125,250,100,100)
+    
+def draw_tree2():
+    noStroke()
+    fill(138,54,15)
+    rect(250, 350, 50, 200)
+    fill(0,100,0)
+    ellipse(250,350,100,100)
+    ellipse(300,350,100,100)
+    ellipse(275,300,100,100)
+    
+def draw_tree3():
+    noStroke()
+    fill(138,54,15)
+    rect(850,300,50,200)
+    fill(0,100,0)
+    ellipse(850,300,100,100)
+    ellipse(900,300,100,100)
+    ellipse(875,250,100,100)
+    
+def draw_house():
+    fill(160,82,45)
+    triangle(450,350,525,250,600,350)
+    fill(176,196,222)
+    rect(450,350,150,150)
+    
+def draw_door():
+    fill(160,82,45)
+    rect(525,410,50,75)
+    fill(0)  
+    ellipse(535,450,10,10)
